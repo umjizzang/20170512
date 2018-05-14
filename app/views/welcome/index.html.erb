@@ -1,0 +1,10 @@
+<h1>인덱스</h1>
+
+<% if current_user.nil? == true%>
+
+    <a href="/users/sign_in">로그인</a>
+    
+<%elsif current_user.nil? == false %>
+    <a data-method="DELETE" href="/users/sign_out">로그아웃</a>
+<% end%>
+    
